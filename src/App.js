@@ -42,42 +42,18 @@ function App() {
   return (
     <div className="app-container">
 
-      {/* HEADER */}
-      <header className="app-header-custom">
+      {/* GÓRNA CZĘŚĆ STRONY */}
+      <header className="header">
         <h1>Formularz adresowy</h1>
       </header>
 
-      {/* FORM */}
-      <main className="app-main">
+      {/* ŚRODEK STRONY */}
+      <main className="content">
         <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="imie"
-            placeholder="Imię"
-            value={formData.imie}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            name="nazwisko"
-            placeholder="Nazwisko"
-            value={formData.nazwisko}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            name="ulica"
-            placeholder="Ulica"
-            value={formData.ulica}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            name="miasto"
-            placeholder="Miasto"
-            value={formData.miasto}
-            onChange={handleChange}
-          />
+          <input type="text" name="imie" placeholder="Imię" value={formData.imie} onChange={handleChange} />
+          <input type="text" name="nazwisko" placeholder="Nazwisko" value={formData.nazwisko} onChange={handleChange} />
+          <input type="text" name="ulica" placeholder="Ulica" value={formData.ulica} onChange={handleChange} />
+          <input type="text" name="miasto" placeholder="Miasto" value={formData.miasto} onChange={handleChange} />
           <button type="submit">Dodaj</button>
         </form>
 
@@ -105,8 +81,8 @@ function App() {
         )}
       </main>
 
-      {/* FOOTER */}
-      <footer className="app-footer">
+      {/* DOLNA CZĘŚĆ STRONY */}
+      <footer className="footer">
         Stronę wykonał Michał
       </footer>
 
