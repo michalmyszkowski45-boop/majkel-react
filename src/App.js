@@ -48,7 +48,7 @@ function App() {
 
         {/* ZDJĘCIE POD NAPISEM */}
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNDJr3o1GFs72fhLsfHLr2qVNyyGdVRtRAg&s"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZxmJ94AXQLcmeV7DA3CoOsCwr_6QyKUeTdw&s"
           alt="Formularz"
           className="header-image"
         />
