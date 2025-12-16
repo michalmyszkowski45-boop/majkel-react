@@ -20,6 +20,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (
       formData.imie &&
       formData.nazwisko &&
@@ -27,7 +28,12 @@ function App() {
       formData.miasto
     ) {
       setEntries([...entries, formData]);
-      setFormData({ imie: "", nazwisko: "", ulica: "", miasto: "" });
+      setFormData({
+        imie: "",
+        nazwisko: "",
+        ulica: "",
+        miasto: "",
+      });
     } else {
       alert("Proszę wypełnić wszystkie pola!");
     }
@@ -38,49 +44,70 @@ function App() {
 
       {/* HEADER */}
       <header className="app-header-custom">
-        <img
-          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/..."
-          alt="Formularz"
-          className="header-image"
-        />
+        <h1>Formularz adresowy</h1>
       </header>
 
-      {/* FORMULARZ */}
-      <form onSubmit={handleSubmit}>
-        <input type="text" name="imie" placeholder="Imię" value={formData.imie} onChange={handleChange} />
-        <input type="text" name="nazwisko" placeholder="Nazwisko" value={formData.nazwisko} onChange={handleChange} />
-        <input type="text" name="ulica" placeholder="Ulica" value={formData.ulica} onChange={handleChange} />
-        <input type="text" name="miasto" placeholder="Miasto" value={formData.miasto} onChange={handleChange} />
-        <button type="submit">Dodaj</button>
-      </form>
+      {/* FORM */}
+      <main className="app-main">
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="imie"
+            placeholder="Imię"
+            value={formData.imie}
+            onChange={handleChange}
+          />
+          <input
+            type="text"
+            name="nazwisko"
+            placeholder="Nazwisko"
+            value={formData.nazwisko}
+            onChange={handleChange}
+          />
+          <input
+            type="text"
+            name="ulica"
+            placeholder="Ulica"
+            value={formData.ulica}
+            onChange={handleChange}
+          />
+          <input
+            type="text"
+            name="miasto"
+            placeholder="Miasto"
+            value={formData.miasto}
+            onChange={handleChange}
+          />
+          <button type="submit">Dodaj</button>
+        </form>
 
-      {/* TABELA */}
-      {entries.length > 0 && (
-        <table>
-          <thead>
-            <tr>
-              <th>Imię</th>
-              <th>Nazwisko</th>
-              <th>Ulica</th>
-              <th>Miasto</th>
-            </tr>
-          </thead>
-          <tbody>
-            {entries.map((entry, index) => (
-              <tr key={index}>
-                <td>{entry.imie}</td>
-                <td>{entry.nazwisko}</td>
-                <td>{entry.ulica}</td>
-                <td>{entry.miasto}</td>
+        {entries.length > 0 && (
+          <table>
+            <thead>
+              <tr>
+                <th>Imię</th>
+                <th>Nazwisko</th>
+                <th>Ulica</th>
+                <th>Miasto</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
-      )}
+            </thead>
+            <tbody>
+              {entries.map((entry, index) => (
+                <tr key={index}>
+                  <td>{entry.imie}</td>
+                  <td>{entry.nazwisko}</td>
+                  <td>{entry.ulica}</td>
+                  <td>{entry.miasto}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
+      </main>
 
       {/* FOOTER */}
       <footer className="app-footer">
-        <p>Stronę wykonał Michał</p>
+        Stronę wykonał Michał
       </footer>
 
     </div>
