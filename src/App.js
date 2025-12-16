@@ -45,6 +45,13 @@ function App() {
       {/* GÓRNA CZĘŚĆ STRONY */}
       <header className="header">
         <h1>Formularz adresowy</h1>
+
+        {/* ZDJĘCIE POD NAPISEM */}
+        <img
+          src="https://via.placeholder.com/300x120?text=Formularz"
+          alt="Formularz"
+          className="header-image"
+        />
       </header>
 
       {/* ŚRODEK STRONY */}
