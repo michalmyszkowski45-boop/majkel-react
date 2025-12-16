@@ -48,7 +48,7 @@ function App() {
 
         {/* ZDJĘCIE POD NAPISEM */}
         <img
-          src="https://via.placeholder.com/300x120?text=Formularz"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNDJr3o1GFs72fhLsfHLr2qVNyyGdVRtRAg&s"
           alt="Formularz"
           className="header-image"
         />
