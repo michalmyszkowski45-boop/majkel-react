@@ -44,7 +44,7 @@ function App() {
 
       {/* GÓRNA CZĘŚĆ STRONY */}
       <header className="header">
-        <h1>Formularz adresowy</h1>
+       
 
         {/* ZDJĘCIE POD NAPISEM */}
         <img
