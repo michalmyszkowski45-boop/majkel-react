@@ -1,19 +1,19 @@
-/* RESET */
+/* ===== RESET ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
 }
 
-/* APP CONTAINER */
+/* ===== UKŁAD STRONY ===== */
 .app-container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* HEADER */
-.app-header-custom {
+/* ===== GÓRNA CZĘŚĆ STRONY (HEADER) ===== */
+.header {
   background-color: #282c34;
   color: white;
   height: 120px;
@@ -22,18 +22,18 @@ body {
   align-items: center;
 }
 
-.app-header-custom h1 {
+.header h1 {
   margin: 0;
   font-size: 28px;
 }
 
-/* MAIN */
-.app-main {
+/* ===== ŚRODKOWA CZĘŚĆ ===== */
+.content {
   flex: 1;
   padding: 30px 20px;
 }
 
-/* FORM */
+/* ===== FORMULARZ ===== */
 form {
   display: flex;
   flex-wrap: wrap;
@@ -50,8 +50,8 @@ input {
 }
 
 input:focus {
-  outline: none;
   border-color: #007bff;
+  outline: none;
 }
 
 button {
@@ -67,14 +67,13 @@ button:hover {
   background-color: #0056b3;
 }
 
-/* TABLE */
+/* ===== TABELA ===== */
 table {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
   border-collapse: collapse;
   background-color: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 th, td {
@@ -87,12 +86,8 @@ th {
   color: white;
 }
 
-tr:hover {
-  background-color: #f1f1f1;
-}
-
-/* FOOTER */
-.app-footer {
+/* ===== DOLNA CZĘŚĆ STRONY (FOOTER) ===== */
+.footer {
   background-color: #282c34;
   color: white;
   text-align: center;
